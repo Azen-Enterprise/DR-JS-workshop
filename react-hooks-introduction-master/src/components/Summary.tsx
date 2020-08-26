@@ -1,8 +1,16 @@
 import React from 'react';
 
 import './Summary.css';
+interface props {
+  name: string,
+  gender: string,
+  height: string,
+  hairColor: string,
+  skinColor: string,
+  movieCount: number
+}
 
-const Summary = props => {
+const Summary = (props: props) => {
   return (
     <div className="summary">
       <h1>{props.name}</h1>
